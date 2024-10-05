@@ -1,0 +1,17 @@
+# calculator.py
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+if __name__ == "__main__":
+    try:
+        num1 = int(input("첫 번째 정수를 입력하세요: "))
+        num2 = int(input("두 번째 정수를 입력하세요: "))
+        
+        print("덧셈 결과: {} + {} = {}".format(num1, num2, add(num1, num2)))
+        print("뺄셈 결과: {} - {} = {}".format(num1, num2, subtract(num1, num2)))
+    except ValueError:
+        print("유효한 정수를 입력하세요.")
